@@ -15,7 +15,7 @@ const List = ()=>{
     }
     useEffect(()=>{
         localStorage.setItem('tasks',JSON.stringify(tasks));
-    })
+    },[tasks])
     const titleInput = (e) =>{
         setTitle(e.target.value);
     }

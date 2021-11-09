@@ -4,15 +4,12 @@
     justify-content: flex-start;
     width: 30vw;
     border-radius: 2vmin;
-    margin: 5px;
-    padding: 5px;
+    margin: 2px
 }
 .taskDiv div{
     width: 80%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-
 }
 .delete{
     background-color: red;

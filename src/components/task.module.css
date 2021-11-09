@@ -1,0 +1,37 @@
+.taskDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 30vw;
+    border-radius: 2vmin;
+    margin: 5px;
+    padding: 5px;
+}
+.taskDiv div{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.delete{
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    height: 60%;
+    align-self: center;
+    border-radius:5px;
+}
+
+.strike { position:relative; }
+.strike::after {
+  content:' ';
+  position:absolute;
+  top:50%; left:-3%;
+  width:0; height:10px;
+  opacity:80%;
+  transform:translateY(-50%);
+  background:repeat-x url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAKAQMAAAByjsdvAAAABlBMVEUAAADdMzNrjRuKAAAAAXRSTlMAQObYZgAAADdJREFUCNdj+MMABP8ZGCQY/h9g+MHw/AHzDwbGD+w/GBhq6h8wMNj/b2BgkP8HVMMPUsn+gQEAsTkQNRVnI4cAAAAASUVORK5CYII=);
+  animation: strike 0.4s linear .3s 1 forwards;
+}
+@keyframes strike { to { width: 106%; } }
